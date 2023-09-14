@@ -23,11 +23,12 @@ body{
 
 .immagine{
     float: left;
-    height: 100px;
+    height: 120px;
 }
 .testo{
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1em;
+    font-weight: bold;
 }
 
 .row{
@@ -35,15 +36,38 @@ body{
 }
 
 .col{
+    background-color: black;
     float: left;
-    border: 1px solid black;
     width: calc(100% / 3);
-    min-height: 100px;
-    text-align: center;
+    text-align:left;
 }
 
 .clearfix::after{
     content: "";
     clear: both;
     display: table;
+}
+
+.descrizione{
+    float: left;
+}
+
+.dati{
+    padding: 0.4em;
+}
+
+.nome{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.ruolo{
+    color: white;
+    font-size: 1rem;
+}
+
+.email{
+    color: cyan;
+    font-size: 1rem;
 }
